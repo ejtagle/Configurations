@@ -164,7 +164,7 @@
 //#define U_DRIVER_TYPE  A4988
 //#define V_DRIVER_TYPE  A4988
 //#define W_DRIVER_TYPE  A4988
-#define E0_DRIVER_TYPE A4988
+#define E0_DRIVER_TYPE DRV8825
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -1234,7 +1234,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT     { 80, 80, 4000, 97 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT     { 80, 80, 4000, 97*2 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
